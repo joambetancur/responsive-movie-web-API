@@ -1,0 +1,29 @@
+:root {
+  /*COLORES*/
+  --live-indicator-shadow: hsla(0, 85%, 58%, 0.45);
+  --rich-black-fogra-30: hsl(210, 4%, 5%);
+  --rich-black-fogra-29: hsl(210, 4%, 8%);
+  --live-indicator: hsl(0, 85%, 58%);
+  --oxford-blue-50: hsla(210, 4%, 12%, 0.75);
+  --oxford-blue: hsl(210, 4%, 12%);
+  --light-azure: hsl(210, 90%, 62%);
+  --off-white: hsl(220, 15%, 88%);
+  --yellow: hsl(45, 95%, 55%);
+  --white: hsl(0, 0%, 100%);
+  --azure: hsl(210, 90%, 56%);
+
+  /*FUENTES*/
+  --ff-montserrat: "Montserrat", sans-serif;
+  /*Tamano Fuente*/
+  --section-heading: 40px;
+  --fs-lg: 22px;
+  --fs-md: 17px;
+  --fs-sm: 14px;
+  --fs-x-sm: 12px;
+  /*Peso Fuente*/
+  --fw-7: 700;
+  --fw-6: 600;
+  --fw-5: 500;
+  /*Espaciado*/
+  --px: 120px;
+}

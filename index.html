@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hojas de estilos -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/accesibility.css">
+    <link rel="stylesheet" href="css/media-query.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Script JS-->
+    <script src="main.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>CineBox</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- CABECERA -->
+        <header class="active">
+            <div class="navbar">
+                <button class="navbar-menu-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
+                <div class="logo">
+                    <ion-icon name="film-outline"></ion-icon>
+                    <span>CineBox</span>
+                </div>
+                <nav class="active">
+                    <ul class="navbar-nav">
+                        <li><a href="#" class="navbar-link">Home</a></li>
+                        <li><a href="#category" class="navbar-link">Category</a></li>
+                        <li><a href="#live" class="navbar-link indicator">LIVE</a></li>
+                    </ul>
+                </nav>
+                <div class="navbar-actions">
+                    <form action="#" class="navbar-form">
+                        <input type="text" name="search" class="navbar-form-search" placeholder="I am looking for...">
+                        <button class="navbar-form-btn">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </button>
+                        <button class="navbar-form-close">
+                            <ion-icon name="close-circle-outline"></ion-icon>
+                        </button>
+                    </form>
+                    <button class="navbar-search-btn" type="submit">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                    <a href="#" class="navbar-signin">
+                        <span>Sign in</span>
+                        <ion-icon name="log-in-outline"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- PRINCIPAL -->
+        <!--Banner-->
+        <main>
+            <section class="banner">
+                <div class="banner-card">
+                    <img src="images/John-Wick-3.jpg" class="banner-img">
+                    <div class="card-content">
+                        <div class="card-info">
+                            <div class="genre">
+                                <ion-icon name="film"></ion-icon>
+                                <span>Action/Thriller</span>
+                            </div>
+                            <div class="year">
+                                <ion-icon name="calendar"></ion-icon>
+                                <span>2019</span>
+                            </div>
+                            <div class="duration">
+                                <ion-icon name="time"></ion-icon>
+                                <span>2h 1min</span>
+                            </div>
+                            <div class="quality">4K</div>
+                        </div>
+                        <h2 class="card-title">John Wick 3: Parabellum</h2>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Seccion Peliculas-->
+        <section class="movies">
+            <div class="filter-bar">
+                <div class="filter-dropdowns">
+                    <select name="genre" class="genre">
+                        <option value="all genres">All genres</option>
+                        <option value="action">Action</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="horror">Horror</option>
+                        <option value="animation">Animation</option>
+                        <option value="historical">Historical</option>
+                    </select>
+                    <select name="year" class="year">
+                        <option value="all years">All the years</option>
+                        <option value="2025">2025</option>
+                        <option value="2020-2024">2020-2024</option>
+                        <option value="2010-2019">2010-2019</option>
+                        <option value="2000-2009">2000-2009</option>
+                        <option value="1970-1999">1970-1999</option>
+                    </select>
+                </div>
+                <div class="filter-radios">
+                    <input type="radio" name="grade" id="featured" checked>
+                    <label for="featured">Featured</label>
+
+                    <input type="radio" name="grade" id="popular" checked>
+                    <label for="popular">Popular</label>
+
+                    <input type="radio" name="grade" id="newest" checked>
+                    <label for="newest">Newest</label>
+
+                    <div class="checked-radio-bg"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Grid Peliculas -->
+        <div class="movies-grid" id="movies-container">
+        </div>
+        <button class="load-more">LOAD MORE</button>
+        <!-- Seccion Categorias -->
+        <section class="category" id="category">
+            <h2 class="section-heading">Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="images/action.jpg" class="card-img">
+                    <div class="name">Action</div>
+                    <div class="total">100</div>
+                </div>
+                <div class="category-card">
+                    <img src="images/comedy.jpg" class="card-img">
+                    <div class="name">Comedy</div>
+                    <div class="total">50</div>
+                </div>
+                <div class="category-card">
+                    <img src="images/thriller.webp" class="card-img">
+                    <div class="name">Thriller</div>
+                    <div class="total">20</div>
+                </div>
+                <div class="category-card">
+                    <img src="images/horror.jpg" class="card-img">
+                    <div class="name">Horror</div>
+                    <div class="total">80</div>
+                </div>
+                <div class="category-card">
+                    <img src="images/adventure.jpg" class="card-img">
+                    <div class="name">Adventure</div>
+                    <div class="total">100</div>
+                </div>
+                <div class="category-card">
+                    <img src="images/animated.jpg" class="card-img">
+                    <div class="name">Animated</div>
+                    <div class="total">50</div>
+                </div>
+                <div class="category-card">
+                    <img src="images/crime.jpg" class="card-img">
+                    <div class="name">Crime</div>
+                    <div class="total">50</div>
+                </div>
+                <div class="category-card">
+                    <img src="images/sci-fi.jpg" class="card-img">
+                    <div class="name">Sci-fi</div>
+                    <div class="total">80</div>
+                </div>
+            </div>
+        </section>
+        <!-- Seccion LIVE -->
+        <section class="live" id="live">
+            <h2 class="section-heading">Live TV Shows</h2>
+            <div class="live-grid">
+                <div class="live-card">
+                    <div class="card-head">
+                        <img src="images/planet.jpg" class="card-img">
+                        <div class="live-badge">LIVE</div>
+                        <div class="total-viewers">305k viewers</div>
+                        <div class="play">
+                            <ion-icon name="play-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/bbcamerica.jpg" class="avatar">
+                        <h3 class="card-title">Planet Earth II <br> Season 1 - Islands</h3>
+                    </div>
+                </div>
+                <div class="live-card">
+                    <div class="card-head">
+                        <img src="images/got.jpg" class="card-img">
+                        <div class="live-badge">LIVE</div>
+                        <div class="total-viewers">216 viewers</div>
+                        <div class="play">
+                            <ion-icon name="play-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/HBO-Logo-square.jpg" class="avatar">
+                        <h3 class="card-title">Game Of Thrones <br> Season 5</h3>
+                    </div>
+                </div>
+                <div class="live-card">
+                    <div class="card-head">
+                        <img src="images/vikins.jpg" class="card-img">
+                        <div class="live-badge">LIVE</div>
+                        <div class="total-viewers">204k viewers</div>
+                        <div class="play">
+                            <ion-icon name="play-circle-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <img src="images/HBO-Logo-square.jpg" class="avatar">
+                        <h3 class="card-title">Vikings <br> Season 4 - What Might Have Been</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Seccion Pie de Pagina -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <ion-icon name="film-outline"></ion-icon>
+                        <span>CineBox</span>
+                    </div>
+                    <p class="slogan">Movies & TV Shows, online cinema, movie database.</p>
+                    <div class="social-link">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <h4 class="link-heading">CineBox</h4>
+                        <li class="link-item"><a href="#">About Us</a></li>
+                        <li class="link-item"><a href="#">My Profile</a></li>
+                        <li class="link-item"><a href="#">Contacts</a></li>
+                        <li class="link-item"><a href="#">Copyright</a></li>
+                    </ul>
+                    <ul>
+                        <h4 class="link-heading">Browse</h4>
+                        <li class="link-item"><a href="#">Live TV</a></li>
+                        <li class="link-item"><a href="#">Live News</a></li>
+                        <li class="link-item"><a href="#">Live Sports</a></li>
+                        <li class="link-item"><a href="#">Streaming</a></li>
+                    </ul>
+                    <ul>
+                        <li class="link-item"><a href="#">TV Shows</a></li>
+                        <li class="link-item"><a href="#">Movies</a></li>
+                        <li class="link-item"><a href="#">Kids</a></li>
+                        <li class="link-item"><a href="#">Collections</a></li>
+                    </ul>
+                    <ul>
+                        <h4 class="link-heading">Help</h4>
+                        <li class="link-item"><a href="#">Account</a></li>
+                        <li class="link-item"><a href="#">Plans & Pricing</a></li>
+                        <li class="link-item"><a href="#">Supported Devices</a></li>
+                        <li class="link-item"><a href="#">Accesibility</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright">
+                    <p>&copy; Copyright 2025 CineBox</p>
+                </div>
+                <div class="wrapper">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms and Conditions</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

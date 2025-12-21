@@ -1,0 +1,142 @@
+@media (max-width: 768px) {
+
+    :root {
+        --px: 20px;
+        --section-heading: 28px;
+    }
+
+    /* Barra de Navegacion*/
+    .navbar {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        margin-right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .navbar-menu-btn {
+        display: block;
+    }
+
+    .navbar-form {
+        display: none;
+    }
+
+    .navbar-search-btn {
+        display: block;
+    }
+
+    /* Banner */
+    .banner-card {
+        height: 260px;
+    }
+
+    .banner-card .card-content {
+        left: 20px;
+        right: 20px;
+        bottom: 30px;
+    }
+
+    .banner-card .card-title {
+        font-size: 1.8em;
+    }
+
+    /* Barra de Filtro */
+    .filter-bar {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    /* Grid de Peliculas */
+    .movies-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* Seccion de Categorias */
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Seccion LIVE */
+    .live-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Pie de Pagina */
+    .footer-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-copyright {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    :root {
+        --px: 60px;
+        --section-heading: 34px;
+    }
+
+    /* Barra de Navegacion */
+    nav {
+        margin-right: 50px;
+    }
+
+    .navbar-nav li:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    /* Banner */
+    .banner-card {
+        height: 320px;
+    }
+
+    .banner-card .card-title {
+        font-size: 2.2em;
+    }
+
+    /* Grid de Peliculas */
+    .movies-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Seccion de Categorias */
+    .category-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Seccion LIVE */
+    .live-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Pie de Pagina */
+    .footer-links {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
