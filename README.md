@@ -2,7 +2,7 @@
 
 CineBox es una aplicación web moderna y dinámica que permite a los usuarios explorar, buscar y filtrar películas y series de televisión en tiempo real. Este proyecto consume datos en vivo desde la API de **The Movie Database (TMDB)**.
 
-### Para ver: 
+### Para ver: https://responsive-movie-web.vercel.app/ 
 
 ## 🛠️ Tecnologías Utilizadas
 
