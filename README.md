@@ -34,3 +34,7 @@ CineBox es una aplicación web moderna y dinámica que permite a los usuarios ex
 * **Gestión de Datos Asíncronos**: Implementación de lógica para manejar múltiples peticiones simultáneas (como cargar imágenes de fondo para todas las categorías al inicio).
 * **Lógica de URLs Dinámicas**: Creación de una función robusta para construir consultas a la API basadas en múltiples parámetros seleccionados por el usuario.
 * **Diseño Adaptable**: Mantenimiento de una interfaz limpia y funcional tanto en móviles como en monitores de escritorio mediante una hoja de estilos de media-queries dedicada.
+
+  
+## ⚠️ Nota sobre la API Key
+Por motivos de simplicidad en este portafolio, la API Key se encuentra en el frontend. Soy consciente de que en aplicaciones escalables esto debe gestionarse mediante Variables de Entorno o un Proxy Server para evitar su exposición.
