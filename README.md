@@ -21,7 +21,7 @@ CineBox es una aplicación web moderna y dinámica que permite a los usuarios ex
 
 * **Buscador en Tiempo Real**: Encuentra cualquier título disponible en la base de datos de TMDB.
 * **Filtrado Inteligente**: Sistema de filtros por **género** (Acción, Comedia, Terror, etc.) y por **rango de años**.
-* **Carga Infinita (Paginación)**: Botón "Load More" funcional que permite explorar miles de resultados sin recargar la página.
+* **Paginacion Incremental (Load More)**: Botón "Load More" funcional que permite explorar miles de resultados sin recargar la página.
 * **Tarjetas de Categoría Dinámicas**: Las categorías cargan automáticamente imágenes de fondo basadas en las películas más populares de cada género.
 * **Experiencia de Usuario (UX)**:
     * *Spinners* de carga para estados de espera.
