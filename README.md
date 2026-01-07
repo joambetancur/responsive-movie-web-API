@@ -5,6 +5,8 @@ El proyecto está enfocado en rendimiento, experiencia de usuario, accesibilidad
 
 ### Para ver: https://responsive-movie-web.vercel.app/ 
 
+## Pantalla Principal: <img width="823" height="413" alt="App" src="https://github.com/user-attachments/assets/aff4566e-ec37-403f-93f6-6666076e7fb2" />
+
 ## 📌 Descripción del Proyecto
 
 CineBox permite a los usuarios descubrir contenido audiovisual de forma rápida e intuitiva, ofreciendo búsqueda en tiempo real, filtros avanzados y paginación dinámica sin recargar la página.
