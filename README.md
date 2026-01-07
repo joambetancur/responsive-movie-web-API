@@ -1,8 +1,14 @@
-# 🎬 CineBox - Movie & TV Explorer
+# 🎬 CineBox – Movie & TV Explorer (Vanilla JS + TMDB API)
 
-CineBox es una aplicación web moderna y dinámica que permite a los usuarios explorar, buscar y filtrar películas y series de televisión en tiempo real. Este proyecto consume datos en vivo desde la API de **The Movie Database (TMDB)**.
+Aplicación web moderna para explorar, buscar y filtrar películas y series en tiempo real utilizando la API de The Movie Database (TMDB).
+El proyecto está enfocado en rendimiento, experiencia de usuario, accesibilidad y código limpio, simulando un entorno real de desarrollo frontend.
 
 ### Para ver: https://responsive-movie-web.vercel.app/ 
+
+## 📌 Descripción del Proyecto
+
+CineBox permite a los usuarios descubrir contenido audiovisual de forma rápida e intuitiva, ofreciendo búsqueda en tiempo real, filtros avanzados y paginación dinámica sin recargar la página.
+El objetivo del proyecto fue construir una SPA-like experience usando JavaScript Vanilla, aplicando buenas prácticas modernas antes de migrar a frameworks como React.
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -35,6 +41,21 @@ CineBox es una aplicación web moderna y dinámica que permite a los usuarios ex
 * **Lógica de URLs Dinámicas**: Creación de una función robusta para construir consultas a la API basadas en múltiples parámetros seleccionados por el usuario.
 * **Diseño Adaptable**: Mantenimiento de una interfaz limpia y funcional tanto en móviles como en monitores de escritorio mediante una hoja de estilos de media-queries dedicada.
 
-  
+## ⚙️ Decisiones Técnicas
+
+- Se utilizó JavaScript vanilla en lugar de frameworks para reforzar el dominio del DOM y la asincronía.
+- La paginación incremental ("Load More") fue elegida sobre infinite scroll para evitar peticiones innecesarias.
+- Se implementó debounce en el buscador para reducir llamadas a la API.
+- Se separó la lógica de construcción de URLs para facilitar el mantenimiento y escalabilidad.
+
+## Mejoras Planeadas
+
+- Migración del proyecto a React
+- Componentización
+- Hooks (useState, useEffect)
+- Custom hooks para consumo de API
+- Implementación de TypeScript
+- Favoritos persistentes (LocalStorage)
+
 ## ⚠️ Nota sobre la API Key
 Por motivos de simplicidad en este portafolio, la API Key se encuentra en el frontend. Soy consciente de que en aplicaciones escalables esto debe gestionarse mediante Variables de Entorno o un Proxy Server para evitar su exposición.
